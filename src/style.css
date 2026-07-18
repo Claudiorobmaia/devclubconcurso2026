@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+.fade-edges {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+/* ============================
+   Card do Bruno: notebook mockup real + chat animado sobreposto
+   ============================ */
+
+.mentor-frame {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  aspect-ratio: 1536 / 1024; /* proporção exata da imagem */
+}
+
+.mentor-frame-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* glow atrás do notebook inteiro, sutil, só acende no hover */
+.mentor-frame::before {
+  content: '';
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+  opacity: 0;
+  filter: blur(50px);
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.mentor-frame:hover::before {
+  opacity: 0.35;
+}
+
+/* painel de chat real, sobreposto exatamente onde está o chat fake da imagem */
+.mentor-chat-panel {
+  position: absolute;
+  left: 63%;
+  top: 16.1%;
+  width: 22.8%;
+  height: 56%;
+  z-index: 1;
+  background: #0b0f16;
+  border-radius: 14px;
+  padding: 1% 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+.mentor-chat-title {
+  color: #2dd4bf;
+  font-size: clamp(11px, 8.5cqw, 15px);
+  font-weight: 600;
+  margin: 0 0 6%;
+}
+
+.mentor-chat-panel .chat-bubble {
+  font-size: clamp(9px, 6.5cqw, 12px);
+  padding: clamp(4px, 3cqw, 8px) clamp(6px, 4cqw, 10px);
+  line-height: 1.3;
+  max-width: 100%;
+}
+
+.chat-thread-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.bubble-in {
+  align-self: flex-start;
+  background: rgba(50, 50, 55, 0.9);
+  border-bottom-left-radius: 2px;
+}
+
+.bubble-out {
+  align-self: flex-end;
+  background: rgba(37, 130, 90, 0.9);
+  border-bottom-right-radius: 2px;
+}
+

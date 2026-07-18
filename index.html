@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devclub-landing</title>
+  </head>
+  <body>
+    <section class="relative bg-[#0a0a14] overflow-hidden">
+  <!-- Navbar -->
+  <nav class="relative z-20 flex items-center justify-between px-8 py-5 max-w-6xl mx-auto">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600"></div>
+      <span class="text-white font-semibold text-lg">DevClub</span>
+    </div>
+    <div class="hidden md:flex items-center gap-6 text-sm text-gray-300 bg-white/5 px-6 py-2 rounded-full border border-white/10">
+      <a href="#" class="hover:text-white transition">Cursos</a>
+      <a href="#" class="hover:text-white transition">Planos</a>
+      <a href="#" class="hover:text-white transition">Comunidade</a>
+      <a href="#" class="hover:text-white transition">Blog</a>
+      <a href="#" class="hover:text-white transition">Novidades</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="#" class="text-sm text-gray-300 hover:text-white transition">Entrar</a>
+      <a href="#" class="text-sm font-medium bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition">Começar grátis</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="relative z-10 text-center pt-16 pb-8 px-4">
+    <span class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-gray-300 text-xs px-4 py-1.5 rounded-full mb-6">
+      ✨ Novo: Trilha de IA para devs já disponível
+    </span>
+    <h1 class="text-4xl md:text-6xl font-bold text-white max-w-3xl mx-auto leading-tight">
+      Domine o Desenvolvimento Full Stack na Escola que está Formando a Nova Geração de Programadores.
+    </h1>
+    <p class="text-gray-400 mt-6 text-lg max-w-xl mx-auto">
+      No DevClub, você aprende do zero ao profissional com uma metodologia prática, projetos reais e acompanhamento de especialistas para conquistar sua vaga no mercado de tecnologia.
+    </p>
+  </div>
+
+  <!-- Glow effect -->
+  <div class="relative flex justify-center">
+    <div class="absolute top-0 w-[500px] h-[250px] bg-purple-600/40 blur-[100px] rounded-full"></div>
+    <div class="absolute top-10 w-[300px] h-[300px] bg-indigo-500/50 blur-[80px] rounded-full"></div>
+  </div>
+
+  <!-- Dashboard preview card -->
+  <div class="relative z-10 max-w-5xl mx-auto px-4 pb-20 -mt-10">
+    <div class="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-2xl grid grid-cols-1 md:grid-cols-[220px_1fr_260px] overflow-hidden">
+      
+      <!-- Sidebar -->
+      <div class="border-r border-white/10 p-5 hidden md:block">
+        <div class="flex items-center gap-2 bg-white/5 rounded-lg px-3 py-2 mb-6 text-sm text-gray-400">
+          <span>🔍</span>
+          <span>Buscar aula...</span>
+          <span class="ml-auto text-xs">⌘K</span>
+        </div>
+        <ul class="space-y-3 text-sm">
+          <li class="text-purple-400 font-medium flex items-center gap-2">📘 Trilha Full Stack</li>
+          <li class="text-gray-400 flex items-center gap-2">📂 Meus Projetos</li>
+          <li class="text-gray-400 flex items-center gap-2">✅ Desafios</li>
+          <li class="text-gray-400 flex items-center gap-2">🗺️ Roadmap</li>
+        </ul>
+      </div>
+
+      <!-- Main content -->
+      <div class="p-6 border-r border-white/10">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-1 h-4 bg-purple-500 rounded-full"></span>
+          <span class="text-white font-medium text-sm">Módulo 4 · JavaScript Avançado</span>
+        </div>
+        <div class="space-y-3 text-sm text-gray-400">
+          <p class="text-gray-300">Hoje comecei a trilha de <span class="text-purple-400">Full Stack</span></p>
+          <p class="pl-4">O que é o DevClub?</p>
+          <p class="pl-8 text-gray-500">Uma escola criada para formar devs prontos pro mercado</p>
+          <p class="pl-8 text-gray-500">Ensino por projetos reais e mentoria em grupo</p>
+          <p class="pl-8 text-gray-500">Com o tempo, você constrói um portfólio sólido</p>
+        </div>
+        <div class="mt-6 flex items-center justify-center">
+          <div class="w-14 h-14 rounded-full bg-purple-600/80 flex items-center justify-center shadow-lg shadow-purple-500/50">
+            <span class="text-white text-xl">▶</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendar / stats -->
+      <div class="p-5 hidden md:block">
+        <div class="flex items-center justify-between mb-4 text-sm text-gray-300">
+          <span>‹</span>
+          <span class="font-medium text-white">Abril 2026</span>
+          <span>›</span>
+        </div>
+        <div class="grid grid-cols-7 gap-1 text-[10px] text-gray-500 text-center mb-2">
+          <span>Se</span><span>Te</span><span>Qa</span><span>Qi</span><span>Se</span><span>Sa</span><span>Do</span>
+        </div>
+        <div class="grid grid-cols-7 gap-1 text-[11px] text-gray-400 text-center">
+          <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span>1</span>
+          <span class="bg-purple-600 text-white rounded-md">2</span>
+          <span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+        </div>
+        <div class="mt-6 space-y-2 text-xs text-gray-400">
+          <p class="flex items-center gap-2">📌 Fixar aula</p>
+          <p class="flex items-center gap-2">🔗 Compartilhar link</p>
+          <p class="flex items-center gap-2">🕘 Ver progresso</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="bg-[#050806] py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-white max-w-lg leading-snug">
+        Trilhas e Formações atualizadas para você aprender o que importa, mais rápido
+      </h2>
+      <p class="text-gray-400 max-w-md text-sm md:text-base">
+        Defina a habilidade que você quer desenvolver e estude apenas o necessário para atingi-la, criando projetos práticos e com suporte de mentores especializados.
+      </p>
+    </div>
+
+    <!-- Cards grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Card 1 -->
+      <div class="relative rounded-2xl border border-white/10 bg-gradient-to-b from-emerald-900/20 to-black/40 p-8 text-center overflow-hidden hover:border-white/20 transition">
+        <div class="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full scale-75 -translate-y-10 mx-auto w-40 h-40 top-0 left-1/2 -translate-x-1/2"></div>
+        <div class="relative">
+          <div class="w-14 h-14 mx-auto rounded-full border border-emerald-500/30 flex items-center justify-center mb-5 text-emerald-400 text-2xl">
+            🧠
+          </div>
+          <h3 class="text-white font-semibold text-lg mb-2">DevClub FullStack Pro</h3>
+          <p class="text-gray-400 text-sm mb-5">Domine front-end e back-end com projetos reais do início ao fim.</p>
+          <span class="inline-flex items-center gap-1 text-gray-500 text-xs">🕐 60h</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="relative rounded-2xl border border-white/10 bg-gradient-to-b from-orange-900/20 to-black/40 p-8 text-center overflow-hidden hover:border-white/20 transition">
+        <div class="absolute inset-0 bg-orange-500/10 blur-3xl rounded-full scale-75 -translate-y-10 mx-auto w-40 h-40 top-0 left-1/2 -translate-x-1/2"></div>
+        <div class="relative">
+          <div class="w-14 h-14 mx-auto rounded-full border border-orange-500/30 flex items-center justify-center mb-5 text-orange-400 text-2xl">
+            🤖
+          </div>
+          <h3 class="text-white font-semibold text-lg mb-2">IA Club</h3>
+          <p class="text-gray-400 text-sm mb-5">Aprenda a criar e integrar soluções de inteligência artificial na prática.</p>
+          <span class="inline-flex items-center gap-1 text-gray-500 text-xs">🕐 40h</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="relative rounded-2xl border border-white/10 bg-gradient-to-b from-blue-900/20 to-black/40 p-8 text-center overflow-hidden hover:border-white/20 transition">
+        <div class="absolute inset-0 bg-blue-500/10 blur-3xl rounded-full scale-75 -translate-y-10 mx-auto w-40 h-40 top-0 left-1/2 -translate-x-1/2"></div>
+        <div class="relative">
+          <div class="w-14 h-14 mx-auto rounded-full border border-blue-500/30 flex items-center justify-center mb-5 text-blue-400 text-2xl">
+            🎓
+          </div>
+          <h3 class="text-white font-semibold text-lg mb-2">DevClub MBA</h3>
+          <p class="text-gray-400 text-sm mb-5">Aprofunde-se em gestão e liderança para carreiras tech de alto nível.</p>
+          <span class="inline-flex items-center gap-1 text-gray-500 text-xs">🕐 35h</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="relative rounded-2xl border border-white/10 bg-gradient-to-b from-red-900/20 to-black/40 p-8 text-center overflow-hidden hover:border-white/20 transition">
+        <div class="absolute inset-0 bg-red-500/10 blur-3xl rounded-full scale-75 -translate-y-10 mx-auto w-40 h-40 top-0 left-1/2 -translate-x-1/2"></div>
+        <div class="relative">
+          <div class="w-14 h-14 mx-auto rounded-full border border-red-500/30 flex items-center justify-center mb-5 text-red-400 text-2xl">
+            🏆
+          </div>
+          <h3 class="text-white font-semibold text-lg mb-2">DevClub Elite</h3>
+          <p class="text-gray-400 text-sm mb-5">Para quem quer ir além: desafios avançados e mentoria individual.</p>
+          <span class="inline-flex items-center gap-1 text-gray-500 text-xs">🕐 50h</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="relative rounded-2xl border border-white/10 bg-gradient-to-b from-cyan-900/20 to-black/40 p-8 text-center overflow-hidden hover:border-white/20 transition">
+        <div class="absolute inset-0 bg-cyan-500/10 blur-3xl rounded-full scale-75 -translate-y-10 mx-auto w-40 h-40 top-0 left-1/2 -translate-x-1/2"></div>
+        <div class="relative">
+          <div class="w-14 h-14 mx-auto rounded-full border border-cyan-500/30 flex items-center justify-center mb-5 text-cyan-400 text-2xl">
+            🎨
+          </div>
+          <h3 class="text-white font-semibold text-lg mb-2">Front End Club</h3>
+          <p class="text-gray-400 text-sm mb-5">Crie interfaces modernas e responsivas com as melhores práticas do mercado.</p>
+          <span class="inline-flex items-center gap-1 text-gray-500 text-xs">🕐 30h</span>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="relative rounded-2xl border border-white/10 bg-gradient-to-b from-green-900/20 to-black/40 p-8 text-center overflow-hidden hover:border-white/20 transition">
+        <div class="absolute inset-0 bg-green-500/10 blur-3xl rounded-full scale-75 -translate-y-10 mx-auto w-40 h-40 top-0 left-1/2 -translate-x-1/2"></div>
+        <div class="relative">
+          <div class="w-14 h-14 mx-auto rounded-full border border-green-500/30 flex items-center justify-center mb-5 text-green-400 text-2xl">
+            📊
+          </div>
+          <h3 class="text-white font-semibold text-lg mb-2">Data Club — Análise de Dados</h3>
+          <p class="text-gray-400 text-sm mb-5">Aprenda a coletar, tratar e interpretar dados para tomar decisões melhores.</p>
+          <span class="inline-flex items-center gap-1 text-gray-500 text-xs">🕐 28h</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="relative bg-[#05040a] py-24 px-4 overflow-hidden">
+  <!-- Glow background -->
+  <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-purple-700/10 blur-[120px] rounded-full"></div>
+
+  <div class="relative max-w-6xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-14">
+      <span class="inline-block bg-white/5 border border-white/10 text-gray-300 text-xs px-4 py-1.5 rounded-full mb-5">
+        Mural de conquistas
+      </span>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Amado por quem transformou a carreira</h2>
+      <p class="text-gray-400 text-sm md:text-base">Veja o que os alunos estão dizendo sobre a DevClub</p>
+    </div>
+
+<!-- Testimonials marquee -->
+<div id="testimonials-section" class="relative overflow-hidden py-4 fade-edges" data-lenis-prevent>
+  <div id="testimonials-track" class="flex gap-5 w-max">
+</div>
+</section>
+<section class="bg-[#050b0a] py-24 px-4">
+  <div class="max-w-6xl mx-auto space-y-24">
+
+    <!-- Row 1: text left, preview right -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-xl mb-6">
+          🎓
+        </div>
+        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-snug">
+          Mentores que já viveram o que você está vivendo
+        </h3>
+        <p class="text-gray-400 leading-relaxed">
+          Nossa equipe de mentores é formada por profissionais que atuam ativamente no mercado, com anos de experiência em empresas de tecnologia. Eles não apenas ensinam teoria — eles guiam você pelos mesmos desafios que enfrentaram para chegar onde estão, com paciência e clareza em cada dúvida.
+        </p>
+      </div>
+<div class="mentor-frame">
+  <img class="mentor-frame-bg" src="/notebook-mentor.png" alt="Bruno Cavalcante em mentoria ao vivo" />
+  <div class="mentor-chat-panel">
+    <p class="mentor-chat-title">Chat</p>
+    <div class="chat-thread-panel" id="chat-bruno">
+      <div class="chat-bubble bubble-in" data-text="Fica tranquilo, esse erro de CORS é super comum. Bora resolver juntos 👋"></div>
+      <div class="chat-bubble bubble-out" data-text="Nossa, muito obrigado! Já tinha tentado de tudo"></div>
+      <div class="chat-bubble bubble-in" data-text="Isso! Qualquer coisa me chama, tô aqui até resolver 🚀"></div>
+    </div>
+  </div>
+</div>
+<p class="text-white text-sm font-medium mt-3 text-center">Bruno Cavalcante</p>
+<p class="text-gray-500 text-xs text-center">Mentor Full Stack · 8 anos de mercado</p>
+    <!-- Row 2: preview left, text right -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="order-2 lg:order-1 rounded-2xl border border-white/10 bg-white/[0.03] overflow-hidden shadow-2xl">
+        <div class="px-5 py-4 border-b border-white/10">
+          <p class="text-white text-sm font-medium">Central de Suporte DevClub</p>
+          <p class="text-gray-500 text-xs">Tempo médio de resposta: 4 minutos</p>
+        </div>
+        <div class="p-5 space-y-4">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-xs font-semibold shrink-0">SL</div>
+            <div class="flex-1">
+              <p class="text-white text-sm font-medium mb-1">Suporte técnico · Sofia Lemos</p>
+              <p class="text-gray-400 text-sm">Consegui identificar o problema no seu ambiente. Já te mandei o passo a passo corrigido, só seguir e testar de novo 😉</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-xs font-semibold shrink-0">SL</div>
+            <div class="flex-1">
+              <p class="text-white text-sm font-medium mb-1">Suporte técnico · Sofia Lemos</p>
+              <p class="text-gray-400 text-sm">Fico por aqui até você confirmar que funcionou, sem pressa nenhuma 🙌</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 pt-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-emerald-400 text-xs">Online agora · suporte disponível 24/7</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-1 lg:order-2">
+        <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-xl mb-6">
+          💬
+        </div>
+        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-snug">
+          Suporte técnico que resolve, não empurra pra depois
+        </h3>
+        <p class="text-gray-400 leading-relaxed">
+          Sabemos como é frustrante ficar travado num erro sem ajuda. Por isso nosso time de suporte técnico está disponível todos os dias, pronto para mergulhar no seu problema até a solução aparecer. Sem scripts prontos, sem respostas genéricas — atendimento humano, direto e eficiente.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 3: text left, preview right -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-xl mb-6">
+          🧑‍🏫
+        </div>
+        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 leading-snug">
+          Professores especialistas em cada tecnologia
+        </h3>
+        <p class="text-gray-400 leading-relaxed">
+          Cada trilha da DevClub é conduzida por professores especializados na tecnologia que ensinam — não generalistas. Isso garante aulas atualizadas, aprofundadas e conectadas com o que o mercado realmente exige, com espaço aberto para perguntas e feedback contínuo.
+        </p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-white/[0.03] overflow-hidden shadow-2xl">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+          <p class="text-white text-sm font-medium">Aula ao vivo · Estruturas de Dados</p>
+          <span class="text-xs text-red-400 flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span> AO VIVO
+          </span>
+        </div>
+        <div class="p-5 grid grid-cols-3 gap-3">
+          <div class="col-span-2 aspect-video rounded-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-white/5 flex items-center justify-center text-gray-600 text-xs">
+            código em tela compartilhada
+          </div>
+          <div class="space-y-3">
+            <div class="aspect-square rounded-lg bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white text-sm font-semibold">RT</div>
+            <p class="text-gray-400 text-xs">Rodrigo Teixeira</p>
+            <p class="text-gray-600 text-[11px]">Professor de Algoritmos</p>
+          </div>
+        </div>
+        <div class="px-5 py-4 border-t border-white/10 text-xs text-gray-500">
+          312 alunos assistindo agora · perguntas abertas no chat
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="relative bg-[#05030f] overflow-hidden">
+  <!-- Radial rings background -->
+  <div class="relative flex justify-center pt-16 pb-10">
+    <svg class="w-full max-w-3xl h-64 md:h-80" viewBox="0 0 700 350" fill="none">
+      <circle cx="350" cy="350" r="80" stroke="rgba(139,92,246,0.15)" stroke-width="1"/>
+      <circle cx="350" cy="350" r="160" stroke="rgba(139,92,246,0.12)" stroke-width="1"/>
+      <circle cx="350" cy="350" r="240" stroke="rgba(139,92,246,0.09)" stroke-width="1"/>
+      <circle cx="350" cy="350" r="320" stroke="rgba(139,92,246,0.06)" stroke-width="1"/>
+      <line x1="350" y1="0" x2="350" y2="350" stroke="rgba(139,92,246,0.15)" stroke-width="1"/>
+      <line x1="30" y1="350" x2="670" y2="350" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
+    </svg>
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-purple-600/30 border border-purple-400/40 flex items-center justify-center shadow-[0_0_40px_10px_rgba(139,92,246,0.3)]">
+      <span class="text-2xl">🌐</span>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative max-w-4xl mx-auto px-4 pb-20 text-center border-t border-white/10 pt-10">
+    <span class="inline-block bg-white/5 border border-white/10 text-gray-300 text-xs px-4 py-1.5 rounded-full mb-6">
+      Empresas parceiras
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+      Onde nossos alunos estão trabalhando
+    </h2>
+    <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-12">
+      Alunos formados pela DevClub atuam hoje em empresas de tecnologia de referência no Brasil e no mundo — do primeiro emprego a posições sênior.
+    </p>
+
+    <!-- Logos grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 border-t border-white/10">
+
+      <div class="flex items-center justify-center gap-3 py-10 border-b md:border-r border-white/10">
+        <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-purple-300 text-xs font-bold">N</div>
+        <span class="text-gray-300 font-medium text-sm tracking-wide">Nubank</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-3 py-10 border-b md:border-r border-white/10">
+        <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-purple-300 text-xs font-bold">iF</div>
+        <span class="text-gray-300 font-medium text-sm tracking-wide">iFood</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-3 py-10 border-b md:border-r border-white/10">
+        <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-purple-300 text-xs font-bold">S</div>
+        <span class="text-gray-300 font-medium text-sm tracking-wide">Stone</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-3 py-10 border-b border-white/10">
+        <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-purple-300 text-xs font-bold">ML</div>
+        <span class="text-gray-300 font-medium text-sm tracking-wide">Mercado Livre</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-3 py-10 md:border-r border-white/10">
+        <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-purple-300 text-xs font-bold">T</div>
+        <span class="text-gray-300 font-medium text-sm tracking-wide">Totvs</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-3 py-10 md:border-r border-white/10">
+        <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-purple-300 text-xs font-bold">L</div>
+        <span class="text-gray-300 font-medium text-sm tracking-wide">Loft</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-3 py-10 md:border-r border-white/10">
+        <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-purple-300 text-xs font-bold">QA</div>
+        <span class="text-gray-300 font-medium text-sm tracking-wide">QuintoAndar</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-3 py-10">
+        <div class="w-9 h-9 rounded-lg bg-purple-500/10 border border-purple-400/20 flex items-center justify-center text-purple-300 text-xs font-bold">V</div>
+        <span class="text-gray-300 font-medium text-sm tracking-wide">VTEX</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="bg-[#0a0a14] py-24 px-4">
+  <div class="max-w-3xl mx-auto">
+    <!-- Header -->
+    <span class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-purple-300 text-xs px-4 py-1.5 rounded-full mb-6">
+      🚀 F.A.Q.
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-10">
+      Restou alguma dúvida?
+    </h2>
+
+    <!-- Accordion -->
+    <div class="space-y-3">
+
+      <details class="group rounded-xl border border-white/10 bg-white/[0.03] overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
+          <span class="text-white font-medium text-sm md:text-base">Qual a diferença entre os planos DevClub Cursos e DevClub Pro?</span>
+          <span class="shrink-0 text-purple-400 text-xl leading-none transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-gray-400 text-sm leading-relaxed">
+          O plano Cursos dá acesso às trilhas escolhidas individualmente. Já o DevClub Pro libera todas as trilhas, mentorias em grupo, suporte prioritário e comunidade exclusiva por um valor único mensal.
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-white/10 bg-white/[0.03] overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
+          <span class="text-white font-medium text-sm md:text-base">Quanto tempo dura o acesso aos cursos?</span>
+          <span class="shrink-0 text-purple-400 text-xl leading-none transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-gray-400 text-sm leading-relaxed">
+          O acesso é vitalício para as trilhas adquiridas individualmente. Já nos planos de assinatura, o acesso permanece ativo enquanto a assinatura estiver em dia.
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-white/10 bg-white/[0.03] overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
+          <span class="text-white font-medium text-sm md:text-base">Onde terei acesso ao conteúdo da DevClub?</span>
+          <span class="shrink-0 text-purple-400 text-xl leading-none transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-gray-400 text-sm leading-relaxed">
+          Todo o conteúdo fica disponível na nossa plataforma exclusiva, acessível pelo navegador ou aplicativo, em qualquer computador ou celular, a qualquer hora.
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-white/10 bg-white/[0.03] overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
+          <span class="text-white font-medium text-sm md:text-base">Existe suporte em caso de dúvidas?</span>
+          <span class="shrink-0 text-purple-400 text-xl leading-none transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-gray-400 text-sm leading-relaxed">
+          Sim! Você conta com suporte técnico e mentoria por chat, além de comunidade ativa para tirar dúvidas todos os dias da semana.
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-white/10 bg-white/[0.03] overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
+          <span class="text-white font-medium text-sm md:text-base">Como funciona o pagamento? Posso parcelar?</span>
+          <span class="shrink-0 text-purple-400 text-xl leading-none transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-gray-400 text-sm leading-relaxed">
+          Aceitamos cartão de crédito, boleto e Pix. No cartão, o pagamento pode ser parcelado em até 12x, direto no checkout.
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-white/10 bg-white/[0.03] overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
+          <span class="text-white font-medium text-sm md:text-base">Existe garantia de satisfação?</span>
+          <span class="shrink-0 text-purple-400 text-xl leading-none transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-gray-400 text-sm leading-relaxed">
+          Sim! Você tem 7 dias de garantia incondicional após a compra. Se não gostar do curso, basta entrar em contato pelo nosso e-mail de suporte que devolvemos 100% do valor pago.
+        </div>
+      </details>
+
+      <details class="group rounded-xl border border-white/10 bg-white/[0.03] overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none">
+          <span class="text-white font-medium text-sm md:text-base">Como entro em contato com a equipe da DevClub?</span>
+          <span class="shrink-0 text-purple-400 text-xl leading-none transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-gray-400 text-sm leading-relaxed">
+          Você pode falar com a gente a qualquer momento pelo e-mail contato@devclub.com.br, ou diretamente pelo chat de suporte dentro da plataforma.
+        </div>
+      </details>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="flex justify-center mt-12">
+      <a href="#" class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-500 transition text-white font-semibold px-8 py-4 rounded-full">
+        Quero Fazer Parte →
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="bg-[#0a0a14] pt-16 pb-8 px-4">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Top: logo + CTAs -->
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-10 border-b border-white/10">
+      <span class="text-white font-semibold text-xl">DevClub</span>
+      <div class="flex items-center gap-3">
+        <a href="#" class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-500 transition text-white text-sm font-medium px-5 py-2.5 rounded-full">
+          Quero ser aluno »
+        </a>
+        <a href="#" class="inline-flex items-center gap-2 border border-white/15 hover:bg-white/5 transition text-white text-sm font-medium px-5 py-2.5 rounded-full">
+          Área de alunos 👤
+        </a>
+      </div>
+    </div>
+
+    <!-- Middle: socials + link columns -->
+    <div class="flex flex-col lg:flex-row justify-between gap-12 py-12">
+
+      <!-- Social icons -->
+      <div class="flex items-center gap-3">
+        <a href="#" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 transition">
+          <!-- Instagram -->
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="#" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 transition">
+          <!-- YouTube -->
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.5-5.3c-.3-1-1-1.7-2-2C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.5.5c-1 .3-1.7 1-2 2C1 8.4 1 12 1 12s0 3.6.5 5.3c.3 1 1 1.7 2 2 1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5c1-.3 1.7-1 2-2 .5-1.7.5-5.3.5-5.3zM9.8 15.5v-7l6 3.5-6 3.5z"/></svg>
+        </a>
+        <a href="#" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 transition">
+          <!-- LinkedIn -->
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12H3v-12zM9 8.98h3.8v1.64h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.55 4.78 5.87v6.44h-4v-5.71c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.19 1.44-2.19 3v5.81H9v-12z"/></svg>
+        </a>
+        <a href="#" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-white/10 transition">
+          <!-- Blog/docs -->
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+        </a>
+      </div>
+
+      <!-- Link columns -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-10">
+        <div>
+          <p class="text-white font-semibold text-sm mb-4">Produto</p>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Características</a></li>
+            <li><a href="#" class="hover:text-white transition">Integrações</a></li>
+            <li><a href="#" class="hover:text-white transition">Preços</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-semibold text-sm mb-4">Empresa</p>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Nossa equipe</a></li>
+            <li><a href="#" class="hover:text-white transition">Nossos valores</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-semibold text-sm mb-4">Recursos</p>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar: cursos strip -->
+    <div class="rounded-2xl bg-white/[0.03] border border-white/10 px-6 md:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <span class="text-white font-semibold text-lg">Trilhas DevClub</span>
+      <div class="flex flex-wrap items-center justify-center gap-6 text-gray-300 text-sm font-medium">
+        <span class="flex items-center gap-2">
+          <span class="w-5 h-5 rounded bg-purple-500/20 border border-purple-400/30"></span> Full Stack Pro
+        </span>
+        <span class="flex items-center gap-2">
+          <span class="w-5 h-5 rounded bg-emerald-500/20 border border-emerald-400/30"></span> IA Club
+        </span>
+        <span class="flex items-center gap-2">
+          <span class="w-5 h-5 rounded bg-blue-500/20 border border-blue-400/30"></span> Front End Club
+        </span>
+        <span class="flex items-center gap-2">
+          <span class="w-5 h-5 rounded bg-orange-500/20 border border-orange-400/30"></span> Data Club
+        </span>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-center text-gray-600 text-xs mt-10">
+      © 2026 DevClub. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
