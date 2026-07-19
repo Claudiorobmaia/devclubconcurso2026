@@ -8,6 +8,33 @@ gsap.registerPlugin(TextPlugin)
 // Efeito de "digitando em tempo real" nos mockups de notebook
 gsap.registerPlugin(TextPlugin)
 
+function renderMentorCard(mentor) {
+  const container = document.querySelector(`#mentor-${mentor.id}`)
+  if (!container) return
+
+  const chatHTML = mentor.chatMessages
+    .map((msg) => {
+      const classes = `chat-bubble bubble-${msg.type}`
+      return `<div class="${classes}" data-text="${msg.text}"></div>`
+    })
+    .join('')
+
+  container.innerHTML = `
+    <div class="mentor-frame">
+      <img class="mentor-frame-bg" src="${mentor.image}" alt="${mentor.name} em mentoria ao vivo" />
+      <div class="mentor-chat-panel">
+        <p class="mentor-chat-title">Chat</p>
+        <div class="chat-thread-panel" id="chat-${mentor.id}">
+          ${chatHTML}
+        </div>
+      </div>
+    </div>
+    <p class="text-white text-sm font-medium mt-3 text-center">${mentor.name}</p>
+    <p class="text-gray-500 text-xs text-center">${mentor.role}</p>
+  `
+}
+
+// Função auxiliar pra animar chat (mesmo padrão de antes)
 function buildChatLoop(threadId) {
   const thread = document.querySelector(`#${threadId}`)
   if (!thread) return
@@ -32,6 +59,19 @@ function buildChatLoop(threadId) {
     onEnter: () => tl.play(),
   })
 }
+
+// Renderizar mentores do JSON
+async function initMentors() {
+  const res = await fetch('/data.json')
+  const data = await res.json()
+  
+  data.mentors.forEach((mentor) => {
+    renderMentorCard(mentor)
+    buildChatLoop(`chat-${mentor.id}`)
+  })
+}
+
+initMentors()
 
 buildChatLoop('chat-bruno')
 buildChatLoop('chat-sofia')

@@ -1,0 +1,159 @@
+{
+
+  "mentors": [
+    {
+      "id": "bruno",
+      "name": "Bruno Cavalcante",
+      "role": "Mentor Full Stack · 8 anos de mercado",
+      "image": "/notebook-mentor.png",
+      "photoId": 12,
+      "gender": "male",
+      "chatMessages": [
+        { "type": "in", "text": "Fica tranquilo, esse erro de CORS é super comum. Bora resolver juntos 👋" },
+        { "type": "out", "text": "Nossa, muito obrigado! Já tinha tentado de tudo" },
+        { "type": "in", "text": "Isso! Qualquer coisa me chama, tô aqui até resolver 🚀" }
+      ]
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia Lemos",
+      "role": "Suporte Técnico · resposta em minutos",
+      "image": "/notebook.png",
+      "photoId": 65,
+      "gender": "female",
+      "chatMessages": [
+        { "type": "in", "text": "Consegui identificar o problema no seu ambiente 🔍" },
+        { "type": "out", "text": "Sério? Já tinha tentado de tudo, obrigada!" },
+        { "type": "in", "text": "Te mandei o passo a passo corrigido, só seguir e testar de novo 😉" }
+      ]
+    },
+    {
+      "id": "rodrigo",
+      "name": "Rodrigo Teixeira",
+      "role": "Professor de Algoritmos · 6 anos lecionando",
+      "image": "/notebook.png",
+      "photoId": 75,
+      "gender": "male",
+      "chatMessages": [
+        { "type": "in", "text": "Essa recursão tá quase lá! Vamos revisar o caso base juntos" },
+        { "type": "out", "text": "Ah, entendi! Faltava a condição de parada" },
+        { "type": "in", "text": "Isso aí! Mandou bem 🎯" }
+      ]
+    }
+  ],
+
+  "courses": [
+    {
+      "id": "fullstack",
+      "icon": "🧠",
+      "color": "emerald",
+      "title": "DevClub FullStack Pro",
+      "description": "Domine front-end e back-end com projetos reais do início ao fim.",
+      "hours": "60h"
+    },
+    {
+      "id": "ia",
+      "icon": "🤖",
+      "color": "orange",
+      "title": "IA Club",
+      "description": "Aprenda a criar e integrar soluções de inteligência artificial na prática.",
+      "hours": "40h"
+    },
+    {
+      "id": "mba",
+      "icon": "🎓",
+      "color": "blue",
+      "title": "DevClub MBA",
+      "description": "Aprofunde-se em gestão e liderança para carreiras tech de alto nível.",
+      "hours": "35h"
+    },
+    {
+      "id": "elite",
+      "icon": "🏆",
+      "color": "red",
+      "title": "DevClub Elite",
+      "description": "Para quem quer ir além: desafios avançados e mentoria individual.",
+      "hours": "50h"
+    },
+    {
+      "id": "frontend",
+      "icon": "🎨",
+      "color": "cyan",
+      "title": "Front End Club",
+      "description": "Crie interfaces modernas e responsivas com as melhores práticas do mercado.",
+      "hours": "30h"
+    },
+    {
+      "id": "data",
+      "icon": "📊",
+      "color": "green",
+      "title": "Data Club — Análise de Dados",
+      "description": "Aprenda a coletar, tratar e interpretar dados para tomar decisões melhores.",
+      "hours": "28h"
+    }
+  ],
+  "partners": [
+    { "name": "Nubank", "abbr": "N" },
+    { "name": "iFood", "abbr": "iF" },
+    { "name": "Stone", "abbr": "S" },
+    { "name": "Mercado Livre", "abbr": "ML" },
+    { "name": "Totvs", "abbr": "T" },
+    { "name": "Loft", "abbr": "L" },
+    { "name": "QuintoAndar", "abbr": "QA" },
+    { "name": "VTEX", "abbr": "V" }
+  ],
+  "faqs": [
+    {
+      "question": "Qual a diferença entre os planos DevClub Cursos e DevClub Pro?",
+      "answer": "O plano Cursos dá acesso às trilhas escolhidas individualmente. Já o DevClub Pro libera todas as trilhas, mentorias em grupo, suporte prioritário e comunidade exclusiva por um valor único mensal."
+    },
+    {
+      "question": "Quanto tempo dura o acesso aos cursos?",
+      "answer": "O acesso é vitalício para as trilhas adquiridas individualmente. Já nos planos de assinatura, o acesso permanece ativo enquanto a assinatura estiver em dia."
+    },
+    {
+      "question": "Onde terei acesso ao conteúdo da DevClub?",
+      "answer": "Todo o conteúdo fica disponível na nossa plataforma exclusiva, acessível pelo navegador ou aplicativo, em qualquer computador ou celular, a qualquer hora."
+    },
+    {
+      "question": "Existe suporte em caso de dúvidas?",
+      "answer": "Sim! Você conta com suporte técnico e mentoria por chat, além de comunidade ativa para tirar dúvidas todos os dias da semana."
+    },
+    {
+      "question": "Como funciona o pagamento? Posso parcelar?",
+      "answer": "Aceitamos cartão de crédito, boleto e Pix. No cartão, o pagamento pode ser parcelado em até 12x, direto no checkout."
+    },
+    {
+      "question": "Existe garantia de satisfação?",
+      "answer": "Sim! Você tem 7 dias de garantia incondicional após a compra. Se não gostar do curso, basta entrar em contato pelo nosso e-mail de suporte que devolvemos 100% do valor pago."
+    },
+    {
+      "question": "Como entro em contato com a equipe da DevClub?",
+      "answer": "Você pode falar com a gente a qualquer momento pelo e-mail contato@devclub.com.br, ou diretamente pelo chat de suporte dentro da plataforma."
+    }
+  ],
+  "socials": [
+    {
+      "name": "Instagram",
+      "icon": "<svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"1\"/></svg>"
+    },
+    {
+      "name": "YouTube",
+      "icon": "<svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M23 12s0-3.6-.5-5.3c-.3-1-1-1.7-2-2C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.5.5c-1 .3-1.7 1-2 2C1 8.4 1 12 1 12s0 3.6.5 5.3c.3 1 1 1.7 2 2 1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5c1-.3 1.7-1 2-2 .5-1.7.5-5.3.5-5.3zM9.8 15.5v-7l6 3.5-6 3.5z\"/></svg>"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "<svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12H3v-12zM9 8.98h3.8v1.64h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.55 4.78 5.87v6.44h-4v-5.71c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.19 1.44-2.19 3v5.81H9v-12z\"/></svg>"
+    },
+    {
+      "name": "Blog",
+      "icon": "<svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M4 4h16v16H4z\"/><path d=\"M8 9h8M8 13h8M8 17h5\"/></svg>"
+    }
+  ],
+  "coursesBadges": [
+    { "name": "Full Stack Pro", "color": "purple" },
+    { "name": "IA Club", "color": "emerald" },
+    { "name": "Front End Club", "color": "blue" },
+    { "name": "Data Club", "color": "orange" }
+  ]
+}
