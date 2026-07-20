@@ -238,34 +238,34 @@ export const HERO_TITLE = {
 };
 
 export const HERO_BUTTONS = {
-  magneticStrength: 0.35,   // quanto o botão "segue" o mouse (0 a 1)
-  duration: 0.4,            // suavização do movimento
+  magneticStrength: 0.9,   // quanto o botão "segue" o mouse (0 a 1)
+  duration: 0.5,            // suavização do movimento
   ease: "power3.out",
   resetDuration: 0.5,
   resetEase: "elastic.out(1, 0.4)", // efeito de "mola" ao soltar
 };
 
 export const HERO_LOGO_FOLLOW = {
-  range: 800,   // deslocamento máximo da logo em px
+  range: 900,   // deslocamento máximo da logo em px
   duration: 0.8,
   ease: "power3.out",
 };
 
 export const HERO_TECH_STACK = {
-  baseRadius: 60,      // raio do ícone mais próximo da logo (px)
+  baseRadius: 90,      // raio do ícone mais próximo da logo (px)
   radiusStep: 15,       // cada ícone seguinte fica mais afastado — isso cria a espiral
   rotationSpeed: 1.5,   // velocidade da rotação (maior = gira mais rápido)
-  followLag: 0.15,      // quão rápido o centro da espiral acompanha a logo ao mover
+  followLag: 0.25,      // quão rápido o centro da espiral acompanha a logo ao mover
   fadeDuration: 0.4,
 }
 
-export const SHOOTING_STARS = {
-  minInterval: 800,
-  maxInterval: 2500,
-  minDuration: 0.8,
-  maxDuration: 1.6,
-  trailLength: 120,
-  color: "rgba(199, 179, 255, 0.9)",
-  minPerWave: 1,    // NOVO — quantos meteoros nascem no mínimo por vez
-  maxPerWave: 4,    // NOVO — quantos podem nascer no máximo por vez
+export const CIRCUIT_GRID = {
+  gridSize: 60,          // espaçamento entre linhas, em px
+  lineOpacity: 0.08,      // quão visível é a malha estática
+  nodeSize: 4,            // diâmetro do "nó" que pulsa, em px
+  nodeColor: 'rgba(199, 179, 255, 0.9)',
+  nodeGlow: '0 0 14px rgba(167, 139, 250, 0.9)',
+  minInterval: 3,       // intervalo mínimo entre um nó acender e outro (ms)
+  maxInterval: 100,
+  pulseDuration: 1.2,     // quanto tempo cada nó fica acendendo/apagando
 }

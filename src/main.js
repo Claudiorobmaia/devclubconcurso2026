@@ -11,11 +11,11 @@ import { renderHeroTitle } from "./hero/heroTitle.js";
 import { renderHeroButtons } from "./hero/heroButtons.js";
 import { initSmoothScroll } from "./utils/smoothScroll.js";
 import { renderHeroTechStack } from './hero/heroTechStack.js'
-import { initShootingStars } from './effects/shootingStars.js'
+import { initCircuitGrid } from './effects/circuitGrid.js'
 
-initShootingStars()
+
 initSmoothScroll();
-
+initCircuitGrid()
 // ... aqui embaixo continuam suas chamadas render*() já existentes
 renderHeroBackground()
 renderMouseGlow()
