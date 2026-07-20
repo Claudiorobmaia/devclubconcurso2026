@@ -207,3 +207,65 @@ if (testimonialsSection && testimonialsTrack) {
 
   updateDepth()
 }
+
+export const MOUSE_GLOW = {
+  size: 500,          // px — diâmetro do círculo de luz
+  duration: 0.6,       // segundos — suavização do "seguir o mouse"
+  ease: 'power3',       // easing usado pelo quickTo (GSAP)
+  fadeInDuration: 0.6,
+}
+
+export const LOGO_TILT = {
+  maxRotation: 50,      // graus — o quanto o logo inclina no máximo (perceptível)
+  duration: 0.5,         // segundos — suavização do quickTo
+  ease: 'power2',         // easing do tilt
+  perspective: 800,        // px — "profundidade" da cena 3D (menor = efeito mais forte)
+}
+
+export const SUBTITLE_FADE = {
+  duration: 0.8,     // segundos
+  delay: 0.3,          // espera antes de começar (deixa o logo/título aparecerem primeiro)
+  ease: 'power2.out',
+  yOffset: 20,          // px — sobe 20px de baixo pra cima enquanto aparece (leve, não exagerado)
+}
+
+export const HERO_TITLE = {
+  duration: 1,
+  stagger: 0.15,
+  yOffset: 40,
+  ease: "power3.out",
+  delay: 0.2,
+};
+
+export const HERO_BUTTONS = {
+  magneticStrength: 0.35,   // quanto o botão "segue" o mouse (0 a 1)
+  duration: 0.4,            // suavização do movimento
+  ease: "power3.out",
+  resetDuration: 0.5,
+  resetEase: "elastic.out(1, 0.4)", // efeito de "mola" ao soltar
+};
+
+export const HERO_LOGO_FOLLOW = {
+  range: 800,   // deslocamento máximo da logo em px
+  duration: 0.8,
+  ease: "power3.out",
+};
+
+export const HERO_TECH_STACK = {
+  baseRadius: 60,      // raio do ícone mais próximo da logo (px)
+  radiusStep: 15,       // cada ícone seguinte fica mais afastado — isso cria a espiral
+  rotationSpeed: 1.5,   // velocidade da rotação (maior = gira mais rápido)
+  followLag: 0.15,      // quão rápido o centro da espiral acompanha a logo ao mover
+  fadeDuration: 0.4,
+}
+
+export const SHOOTING_STARS = {
+  minInterval: 800,
+  maxInterval: 2500,
+  minDuration: 0.8,
+  maxDuration: 1.6,
+  trailLength: 120,
+  color: "rgba(199, 179, 255, 0.9)",
+  minPerWave: 1,    // NOVO — quantos meteoros nascem no mínimo por vez
+  maxPerWave: 4,    // NOVO — quantos podem nascer no máximo por vez
+}

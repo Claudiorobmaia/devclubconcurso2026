@@ -18,7 +18,7 @@
       "id": "sofia",
       "name": "Sofia Lemos",
       "role": "Suporte Técnico · resposta em minutos",
-      "image": "/notebook.png",
+      "image": "/notebook-suporte.png",
       "photoId": 65,
       "gender": "female",
       "chatMessages": [
@@ -31,7 +31,7 @@
       "id": "rodrigo",
       "name": "Rodrigo Teixeira",
       "role": "Professor de Algoritmos · 6 anos lecionando",
-      "image": "/notebook.png",
+      "image": "/notebook-professor.png",
       "photoId": 75,
       "gender": "male",
       "chatMessages": [

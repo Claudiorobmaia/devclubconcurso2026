@@ -3,6 +3,27 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
 import { TextPlugin } from 'gsap/TextPlugin'
+import { renderHeroBackground } from './hero/heroBackground.js'
+import { renderMouseGlow } from './hero/mouseGlow.js'
+import { renderHeroLogo } from './hero/heroLogo.js'
+import { renderHeroSubtitle } from './hero/heroSubtitle.js'
+import { renderHeroTitle } from "./hero/heroTitle.js";
+import { renderHeroButtons } from "./hero/heroButtons.js";
+import { initSmoothScroll } from "./utils/smoothScroll.js";
+import { renderHeroTechStack } from './hero/heroTechStack.js'
+import { initShootingStars } from './effects/shootingStars.js'
+
+initShootingStars()
+initSmoothScroll();
+
+// ... aqui embaixo continuam suas chamadas render*() já existentes
+renderHeroBackground()
+renderMouseGlow()
+renderHeroLogo()
+renderHeroTechStack() 
+renderHeroSubtitle()
+renderHeroButtons() 
+renderHeroTitle()
 
 gsap.registerPlugin(ScrollTrigger)
 
