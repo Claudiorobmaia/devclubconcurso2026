@@ -95,19 +95,19 @@ function renderCourses() {
     const card = document.createElement('div')
     
     // Adicionar classes e estrutura HTML
-    card.innerHTML = `
-      <div class="relative rounded-2xl border border-white/10 bg-gradient-to-b from-${course.color}-900/20 to-black/40 p-8 text-center overflow-hidden hover:border-white/20 transition">
-        <div class="absolute inset-0 bg-${course.color}-500/10 blur-3xl rounded-full scale-75 -translate-y-10 mx-auto w-40 h-40 top-0 left-1/2 -translate-x-1/2"></div>
-        <div class="relative">
-          <div class="w-14 h-14 mx-auto rounded-full border border-${course.color}-500/30 flex items-center justify-center mb-5 text-${course.color}-400 text-2xl">
-            ${course.icon}
-          </div>
-          <h3 class="text-white font-semibold text-lg mb-2">${course.title}</h3>
-          <p class="text-gray-400 text-sm mb-5">${course.description}</p>
-          <span class="inline-flex items-center gap-1 text-gray-500 text-xs">🕐 ${course.hours}</span>
-        </div>
+   card.innerHTML = `
+  <div class="border-beam-card relative rounded-2xl border border-white/10 bg-gradient-to-b from-${course.color}-900/20 to-black/40 p-8 text-center overflow-hidden hover:border-white/20 transition">
+    <div class="absolute inset-0 bg-${course.color}-500/10 blur-3xl rounded-full scale-75 -translate-y-10 mx-auto w-40 h-40 top-0 left-1/2 -translate-x-1/2"></div>
+    <div class="relative">
+      <div class="w-14 h-14 mx-auto rounded-full border border-${course.color}-500/30 flex items-center justify-center mb-5 text-${course.color}-400 text-2xl">
+        ${course.icon}
       </div>
-    `
+      <h3 class="text-white font-semibold text-lg mb-2">${course.title}</h3>
+      <p class="text-gray-400 text-sm mb-5">${course.description}</p>
+      <span class="inline-flex items-center gap-1 text-gray-500 text-xs">🕐 ${course.hours}</span>
+    </div>
+  </div>
+`
     
     // Adicionar o card na página
     container.appendChild(card)
@@ -131,6 +131,7 @@ function renderPartners() {
   partners.forEach(partner => {
     // Criar uma div
     const partnerCard = document.createElement('div')
+    partnerCard.className = 'reveal'
     
     // Adicionar o HTML
     partnerCard.innerHTML = `
@@ -143,6 +144,21 @@ function renderPartners() {
     // Adicionar na página
     container.appendChild(partnerCard)
   })
+
+  gsap.utils.toArray('#partners-grid .reveal').forEach((el, i) => {
+    gsap.from(el, {
+      opacity: 0,
+      y: 30,
+      duration: 0.6,
+      ease: 'power3.out',
+      delay: i * 0.08,
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 90%',
+      },
+    })
+  })
+
 }
 
 // Importar dados das FAQs
@@ -240,3 +256,16 @@ function renderCoursesBadges() {
   })
 }
 
+gsap.set('#partners-visual', { transformOrigin: 'center center' })
+
+gsap.from('#partners-visual', {
+  scale: 0.7,
+  ease: 'none',
+  scrollTrigger: {
+    trigger: '#partners-visual',
+    start: 'top 90%',
+    end: 'top 30%',
+    scrub: true,
+    markers: true,
+  },
+})

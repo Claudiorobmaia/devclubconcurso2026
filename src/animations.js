@@ -1,6 +1,7 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+
 gsap.registerPlugin(ScrollTrigger)
 import { TextPlugin } from 'gsap/TextPlugin'
 gsap.registerPlugin(TextPlugin)
@@ -216,7 +217,7 @@ export const MOUSE_GLOW = {
 }
 
 export const LOGO_TILT = {
-  maxRotation: 50,      // graus — o quanto o logo inclina no máximo (perceptível)
+  maxRotation: 15,      // graus — o quanto o logo inclina no máximo (perceptível)
   duration: 0.5,         // segundos — suavização do quickTo
   ease: 'power2',         // easing do tilt
   perspective: 800,        // px — "profundidade" da cena 3D (menor = efeito mais forte)
@@ -252,7 +253,7 @@ export const HERO_LOGO_FOLLOW = {
 };
 
 export const HERO_TECH_STACK = {
-  baseRadius: 90,      // raio do ícone mais próximo da logo (px)
+  baseRadius: 100,      // raio do ícone mais próximo da logo (px)
   radiusStep: 15,       // cada ícone seguinte fica mais afastado — isso cria a espiral
   rotationSpeed: 1.5,   // velocidade da rotação (maior = gira mais rápido)
   followLag: 0.25,      // quão rápido o centro da espiral acompanha a logo ao mover

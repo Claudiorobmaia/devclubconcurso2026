@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { HERO_LOGO_FOLLOW, LOGO_TILT } from '../animations.js'
-import devclubLogo from '../assets/devclub-logo.png'
+import devclubLogo from '../assets/robodevclub.png'
 
 export function renderHeroLogo() {
   const container = document.querySelector('#hero-logo')
@@ -13,7 +13,7 @@ export function renderHeroLogo() {
         id="logo-inner"
         src="${devclubLogo}"
         alt="Logo DevClub"
-        class="w-80 h-80"
+        class="w-48 h-48"
         style="will-change: transform; transform-style: preserve-3d;"
       />
     </div>

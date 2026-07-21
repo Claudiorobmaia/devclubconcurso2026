@@ -14,6 +14,19 @@
         { "type": "in", "text": "Isso! Qualquer coisa me chama, tô aqui até resolver 🚀" }
       ]
     },
+        {
+      "id": "rodrigo",
+      "name": "Rodrigo Teixeira",
+      "role": "Professor de Algoritmos · 6 anos lecionando",
+      "image": "/notebook-professor-robo2.png",
+      "photoId": 75,
+      "gender": "male",
+      "chatMessages": [
+        { "type": "in", "text": "Essa recursão tá quase lá! Vamos revisar o caso base juntos" },
+        { "type": "out", "text": "Ah, entendi! Faltava a condição de parada" },
+        { "type": "in", "text": "Isso aí! Mandou bem 🎯" }
+      ]
+    },
     {
       "id": "sofia",
       "name": "Sofia Lemos",
@@ -26,20 +39,9 @@
         { "type": "out", "text": "Sério? Já tinha tentado de tudo, obrigada!" },
         { "type": "in", "text": "Te mandei o passo a passo corrigido, só seguir e testar de novo 😉" }
       ]
-    },
-    {
-      "id": "rodrigo",
-      "name": "Rodrigo Teixeira",
-      "role": "Professor de Algoritmos · 6 anos lecionando",
-      "image": "/notebook-professor.png",
-      "photoId": 75,
-      "gender": "male",
-      "chatMessages": [
-        { "type": "in", "text": "Essa recursão tá quase lá! Vamos revisar o caso base juntos" },
-        { "type": "out", "text": "Ah, entendi! Faltava a condição de parada" },
-        { "type": "in", "text": "Isso aí! Mandou bem 🎯" }
-      ]
     }
+
+    
   ],
 
   "courses": [
