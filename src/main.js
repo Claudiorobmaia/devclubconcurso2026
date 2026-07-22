@@ -2,7 +2,6 @@ import './style.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
-import { TextPlugin } from 'gsap/TextPlugin'
 import { renderHeroBackground } from './hero/heroBackground.js'
 import { renderMouseGlow } from './hero/mouseGlow.js'
 import { renderHeroLogo } from './hero/heroLogo.js'
@@ -12,6 +11,8 @@ import { renderHeroButtons } from "./hero/heroButtons.js";
 import { initSmoothScroll } from "./utils/smoothScroll.js";
 import { renderHeroTechStack } from './hero/heroTechStack.js'
 import { initCircuitGrid } from './effects/circuitGrid.js'
+import { renderPartnersGlobe } from './partners/partnersGlobe.js'
+import './animations.js'
 
 
 initSmoothScroll();
@@ -24,16 +25,13 @@ renderHeroTechStack()
 renderHeroSubtitle()
 renderHeroButtons() 
 renderHeroTitle()
-
-gsap.registerPlugin(ScrollTrigger)
+renderPartnersGlobe()
 
 // Smooth scroll
 const lenis = new Lenis()
 lenis.on('scroll', ScrollTrigger.update)
 gsap.ticker.add((time) => lenis.raf(time * 1000))
 gsap.ticker.lagSmoothing(0)
-
-import './animations.js'
 
 // Importar dados dos cursos
 // Variáveis para armazenar os dados
@@ -255,17 +253,3 @@ function renderCoursesBadges() {
     container.appendChild(span)
   })
 }
-
-gsap.set('#partners-visual', { transformOrigin: 'center center' })
-
-gsap.from('#partners-visual', {
-  scale: 0.7,
-  ease: 'none',
-  scrollTrigger: {
-    trigger: '#partners-visual',
-    start: 'top 90%',
-    end: 'top 30%',
-    scrub: true,
-    markers: true,
-  },
-})

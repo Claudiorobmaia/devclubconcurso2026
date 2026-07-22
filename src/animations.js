@@ -1,13 +1,10 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-
-gsap.registerPlugin(ScrollTrigger)
 import { TextPlugin } from 'gsap/TextPlugin'
-gsap.registerPlugin(TextPlugin)
+
+gsap.registerPlugin(ScrollTrigger, TextPlugin)
 
 // Efeito de "digitando em tempo real" nos mockups de notebook
-gsap.registerPlugin(TextPlugin)
 
 function renderMentorCard(mentor) {
   const container = document.querySelector(`#mentor-${mentor.id}`)

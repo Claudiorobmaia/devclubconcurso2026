@@ -216,40 +216,37 @@
 
   </div>
 </section>
-<section id="partners-section" class="relative bg-[#05030f] overflow-hidden">
-  <!-- Radial rings background -->
-  <div id="partners-visual" class="relative flex justify-center pt-16 pb-10">
-    <svg id="partners-rings" class="w-full max-w-3xl h-64 md:h-80" viewBox="0 0 700 350" fill="none">
-      <circle cx="350" cy="350" r="80" stroke="rgba(139,92,246,0.15)" stroke-width="1"/>
-      <circle cx="350" cy="350" r="160" stroke="rgba(139,92,246,0.12)" stroke-width="1"/>
-      <circle cx="350" cy="350" r="240" stroke="rgba(139,92,246,0.09)" stroke-width="1"/>
-      <circle cx="350" cy="350" r="320" stroke="rgba(139,92,246,0.06)" stroke-width="1"/>
-      <line x1="350" y1="0" x2="350" y2="350" stroke="rgba(139,92,246,0.15)" stroke-width="1"/>
-      <line x1="30" y1="350" x2="670" y2="350" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
-    </svg>
-    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-purple-600/30 border border-purple-400/40 flex items-center justify-center shadow-[0_0_40px_10px_rgba(139,92,246,0.3)]">
-      <span class="text-2xl">🌐</span>
-    </div>
-  </div>
-
-  <!-- Content -->
-  <div class="relative max-w-4xl mx-auto px-4 pb-20 text-center border-t border-white/10 pt-10">
-    <span class="inline-block bg-white/5 border border-white/10 text-gray-300 text-xs px-4 py-1.5 rounded-full mb-6">
-      Empresas parceiras
-    </span>
+<section class="relative bg-[#05030f] overflow-hidden">
+  <!--fazer algo aqui com o background de circuitos, talvez um grid de circuitos animado -->
+   <!-- Globo 3D rotativo -->
+<section class="relative bg-[#05030f] overflow-hidden">
+  <!-- Título e texto -->
+  <div class="relative max-w-4xl mx-auto px-4 pt-20 pb-6 text-center">
+    
     <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
       Onde nossos alunos estão trabalhando
     </h2>
-    <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-12">
+    <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
       Alunos formados pela DevClub atuam hoje em empresas de tecnologia de referência no Brasil e no mundo — do primeiro emprego a posições sênior.
     </p>
-
-    <!-- Logos grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 border-t border-white/10" id="partners-grid">
-      <!-- Os parceiros serão renderizados aqui pelo JavaScript -->
-    </div>
   </div>
-</section>
+
+  <!-- Globo 3D rotativo -->
+  <div class="relative flex justify-center pb-10">
+    <div id="partners-globe" class="w-full max-w-2xl h-[550px] mx-auto"></div>
+  </div>
+
+  <!-- Logos grid -->
+<div class="relative max-w-4xl mx-auto px-4 pb-20">
+  <div class="flex justify-center mb-6">
+    <h1 class="text-2xl md:text-3xl font-bold text-white">
+  Empresas parceiras
+</h1>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 border-t border-white/10" id="partners-grid">
+    <!-- Os parceiros serão renderizados aqui pelo JavaScript -->
+  </div>
+</div>
 
 <section class="bg-[#0a0a14] py-24 px-4">
   <div class="max-w-3xl mx-auto">
