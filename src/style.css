@@ -182,6 +182,34 @@
   --beam-5: #06B6D4;
 }
 
+/* Flutuação lenta e orgânica dos blobs de fundo — cada um com trajeto e
+   duração diferentes, pra não parecer sincronizado/repetitivo */
+@keyframes blob-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+}
+
+.blob {
+  animation: blob-float 18s ease-in-out infinite;
+}
+
+.blob-2 {
+  animation-duration: 22s;
+  animation-delay: -6s; /* delay negativo = começa "no meio" do ciclo, evita sincronia */
+}
+
+.blob-3 {
+  animation-duration: 15s;
+  animation-delay: -3s;
+}
+
 .border-beam-card {
   position: relative;
   isolation: isolate; /* garante que os pseudo-elementos não vazem visualmente pro resto da página */
@@ -242,6 +270,118 @@
   animation-play-state: running;
 }
 
+/* ==== ParticleCard ==== */
+
+.particle-card {
+  position: relative;
+  overflow: visible; /* necessário: permite partículas escaparem do card */
+  perspective: 900px;
+  transform-style: preserve-3d;
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.particle-card__canvas {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle-card__glow {
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  background: radial-gradient(
+    220px circle at var(--mx, 50%) var(--my, 50%),
+    var(--glow-color, rgba(168, 85, 247, 0.35)),
+    transparent 70%
+  );
+  mix-blend-mode: screen;
+  transition: opacity 0.35s ease;
+}
+.particle-card.is-active .particle-card__glow {
+  opacity: 1;
+}
+
+.particle-card__border-light {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  background: conic-gradient(
+    from var(--angle, 0deg) at 50% 50%,
+    transparent 0deg,
+    rgba(255, 255, 255, 0.9) 20deg,
+    transparent 65deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: opacity 0.35s ease;
+}
+.particle-card.is-active .particle-card__border-light {
+  opacity: 1;
+}
+
+.particle-card__content {
+  position: relative;
+  z-index: 3;
+  transform: translateZ(24px);
+}
+
+/* base do card (substitui o antigo .liquid-glass) */
+.particle-card {
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px) saturate(115%);
+  -webkit-backdrop-filter: blur(10px) saturate(115%);
+  transition: border-color 0.35s ease, background 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.particle-card.is-active {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .tech-card, .tech-card::before { animation: none !important; transition: none !important; }
+  .particle-card {
+    transform: none !important;
+    transition: none !important;
+  }
+  .particle-card__content {
+    transform: none !important;
+  }
+}
+
+/* mobile / tablet: sem tilt 3D (perspective some, evita distorção sem o hover real) */
+@media (hover: none), (pointer: coarse) {
+  .particle-card {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle-card {
+    transform: none !important;
+    transition: none !important;
+  }
+  .particle-card__content {
+    transform: none !important;
+  }
+}
+
+/* mobile / tablet: sem tilt 3D (perspective some, evita distorção sem o hover real) */
+@media (hover: none), (pointer: coarse) {
+  .particle-card {
+    transform: none;
+  }
 }

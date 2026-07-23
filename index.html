@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>devclub-landing</title>
+    <title>DevClub - Concurso -  2026</title>
   </head>
   <body>
+    
     <section class="relative bg-[#0a0a14] overflow-hidden">
   <!-- Navbar -->
   <nav class="absolute left-1/2 top-8 z-20 flex w-[calc(100%-2rem)] max-w-5xl -translate-x-1/2 items-center justify-between rounded-full  bg-[rgba(10,10,20,0.45)] px-8 py-4 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.25)]">
@@ -14,12 +15,55 @@
       <img src="/src/assets/devclub-logo.png" alt="DevClub" class="w-25 h-25" />
       <span class="text-white font-semibold text-lg">DevClub</span>
     </div>
-    <div class="hidden md:flex items-center gap-6 text-sm text-gray-300 bg-white/5 px-6 py-2 rounded-full border border-white/10">
-      <a href="#" class="hover:text-white transition">Cursos</a>
-      <a href="#" class="hover:text-white transition">Planos</a>
-      <a href="#" class="hover:text-white transition">Comunidade</a>
-      <a href="#" class="hover:text-white transition">Blog</a>
-      <a href="#" class="hover:text-white transition">Novidades</a>
+    <div id="dock-nav" class="hidden md:flex items-end gap-3 bg-white/5 px-4 py-3 rounded-full border border-white/10">
+      <div class="dock-item-wrapper group relative hover:z-50">
+        <span class="dock-tooltip z-30 absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/90 text-white text-xs px-2.5 py-1 rounded-md opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none">HTML5</span>
+        <a href="#" class="dock-item [transform-origin:bottom] inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white p-2 shadow-md">
+          <img src="/src/assets/tech/html5.svg" alt="HTML5" class="w-full h-full object-contain" />
+        </a>
+      </div>
+      <div class="dock-item-wrapper group relative hover:z-50">
+        <span class="dock-tooltip z-30 absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/90 text-white text-xs px-2.5 py-1 rounded-md opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none">CSS3</span>
+        <a href="#" class="dock-item [transform-origin:bottom] inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white p-2 shadow-md">
+          <img src="/src/assets/tech/css3.svg" alt="CSS3" class="w-full h-full object-contain" />
+        </a>
+      </div>
+      <div class="dock-item-wrapper group relative hover:z-50">
+        <span class="dock-tooltip z-30 absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/90 text-white text-xs px-2.5 py-1 rounded-md opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none">JavaScript</span>
+        <a href="#" class="dock-item [transform-origin:bottom] inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white p-2 shadow-md">
+          <img src="/src/assets/tech/javascript.svg" alt="JavaScript" class="w-full h-full object-contain" />
+        </a>
+      </div>
+      <div class="dock-item-wrapper group relative hover:z-50">
+        <span class="dock-tooltip z-30 absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/90 text-white text-xs px-2.5 py-1 rounded-md opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none">React</span>
+        <a href="#" class="dock-item [transform-origin:bottom] inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white p-2 shadow-md">
+          <img src="/src/assets/tech/react.svg" alt="React" class="w-full h-full object-contain" />
+        </a>
+      </div>
+      <div class="dock-item-wrapper group relative hover:z-50">
+        <span class="dock-tooltip z-30 absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/90 text-white text-xs px-2.5 py-1 rounded-md opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none">Node.js</span>
+        <a href="#" class="dock-item [transform-origin:bottom] inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white p-2 shadow-md">
+          <img src="/src/assets/tech/nodejs.svg" alt="Node.js" class="w-full h-full object-contain" />
+        </a>
+      </div>
+      <div class="dock-item-wrapper group relative hover:z-50">
+        <span class="dock-tooltip z-30 absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/90 text-white text-xs px-2.5 py-1 rounded-md opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none">MongoDB</span>
+        <a href="#" class="dock-item [transform-origin:bottom] inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white p-2 shadow-md">
+          <img src="/src/assets/tech/mongodb.svg" alt="MongoDB" class="w-full h-full object-contain" />
+        </a>
+      </div>
+      <div class="dock-item-wrapper group relative hover:z-50">
+        <span class="dock-tooltip z-30 absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/90 text-white text-xs px-2.5 py-1 rounded-md opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none">PostgreSQL</span>
+        <a href="#" class="dock-item [transform-origin:bottom] inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white p-2 shadow-md">
+          <img src="/src/assets/tech/postgresql.svg" alt="PostgreSQL" class="w-full h-full object-contain" />
+        </a>
+      </div>
+      <div class="dock-item-wrapper group relative hover:z-50">
+        <span class="dock-tooltip z-30 absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black/90 text-white text-xs px-2.5 py-1 rounded-md opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-150 pointer-events-none">GitHub</span>
+        <a href="#" class="dock-item [transform-origin:bottom] inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white p-2 shadow-md">
+          <img src="/src/assets/tech/github.svg" alt="GitHub" class="w-full h-full object-contain" />
+        </a>
+      </div>
     </div>
     <div class="flex items-center gap-4">
       <a href="#" class="text-sm text-gray-300 hover:text-white transition">Entrar</a>
@@ -60,7 +104,7 @@
 
   <!-- Dashboard preview card -->
   <div class="relative z-10 max-w-5xl mx-auto px-4 pb-20 -mt-10">
-    <div class="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-2xl grid grid-cols-1 md:grid-cols-[220px_1fr_260px] overflow-hidden">
+    <div class="reveal-card rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-2xl grid grid-cols-1 md:grid-cols-[220px_1fr_260px] overflow-hidden">
       
       <!-- Sidebar -->
       <div class="border-r border-white/10 p-5 hidden md:block">
@@ -84,14 +128,14 @@
           <span class="text-white font-medium text-sm">Módulo 4 · JavaScript Avançado</span>
         </div>
         <div class="space-y-3 text-sm text-gray-400">
-          <p class="text-gray-300">Hoje comecei a trilha de <span class="text-purple-400">Full Stack</span></p>
-          <p class="pl-4">O que é o DevClub?</p>
-          <p class="pl-8 text-gray-500">Uma escola criada para formar devs prontos pro mercado</p>
-          <p class="pl-8 text-gray-500">Ensino por projetos reais e mentoria em grupo</p>
-          <p class="pl-8 text-gray-500">Com o tempo, você constrói um portfólio sólido</p>
+          <p class="reveal-line text-gray-300">Hoje comecei a trilha de <span class="text-purple-400">Full Stack</span></p>
+          <p class="reveal-line pl-4">O que é o DevClub?</p>
+          <p class="reveal-line pl-8 text-gray-500">Uma escola criada para formar devs prontos pro mercado</p>
+          <p class="reveal-line pl-8 text-gray-500">Ensino por projetos reais e mentoria em grupo</p>
+          <p class="reveal-line pl-8 text-gray-500">Com o tempo, você constrói um portfólio sólido</p>
         </div>
         <div class="mt-6 flex items-center justify-center">
-          <div class="w-14 h-14 rounded-full bg-purple-600/80 flex items-center justify-center shadow-lg shadow-purple-500/50">
+          <div id="dashboard-play-btn" class="w-14 h-14 rounded-full bg-purple-600/80 flex items-center justify-center shadow-lg shadow-purple-500/50">
             <span class="text-white text-xl">▶</span>
           </div>
         </div>
@@ -122,8 +166,12 @@
     </div>
   </div>
 </section>
-<section class="bg-[#050806] py-20 px-4">
-  <div class="max-w-6xl mx-auto">
+<section class="relative bg-[#050806] py-20 px-4 overflow-hidden">
+<div class="pointer-events-none absolute inset-0 z-0">
+  <div class="blob absolute w-96 h-96 rounded-full bg-purple-600/10 blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+</div>
+
+  <div class="max-w-6xl mx-auto relative z-10">
     <!-- Header -->
     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
       <h2 class="text-3xl md:text-4xl font-bold text-white max-w-lg leading-snug">
@@ -134,7 +182,7 @@
       </p>
     </div>
 
-        <!-- Cards grid -->
+    <!-- Cards grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="courses-grid">
       <!-- Os cards serão renderizados aqui pelo JavaScript -->
     </div>
@@ -193,7 +241,7 @@
       Professores especialistas em cada tecnologia
     </h3>
     <p class="text-gray-400 leading-relaxed">
-      Cada trilha da DevClub é conduzida por professores especializados na tecnologia que ensinam — não generalistas. Isso garante aulas atualizadas, aprofundadas e conectadas com o que o mercado realmente exige, com espaço aberto para perguntas e feedback contínuo.
+      Cada trilha da DevClub é conduzida por professores especializados na tecnologia que ensinam — Inteligência Artificial e Automação com N8N. Isso garante aulas atualizadas, aprofundadas e conectadas com o que o mercado realmente exige, com espaço aberto para perguntas e feedback contínuo.
     </p>
   </div>
   <div class="lg:order-1" id="mentor-rodrigo"></div>
@@ -337,7 +385,9 @@
 
     <!-- Copyright -->
     <p class="text-center text-gray-600 text-xs mt-10">
-      © 2026 DevClub. Todos os direitos reservados.
+     Todos os direitos reservados.
+
+Desenvolvido por Maia™ | Sites • Sistemas Web • Automações com IA
     </p>
   </div>
 </footer>

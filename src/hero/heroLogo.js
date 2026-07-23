@@ -1,5 +1,5 @@
 import gsap from 'gsap'
-import { HERO_LOGO_FOLLOW, LOGO_TILT } from '../animations.js'
+import { HERO_LOGO_FOLLOW, HERO_LOGO_RETURN, LOGO_TILT } from '../animations.js'
 import devclubLogo from '../assets/robodevclub.png'
 
 export function renderHeroLogo() {
@@ -43,6 +43,7 @@ export function renderHeroLogo() {
   let anchorCenterX = 0
   let anchorCenterY = 0
   let heroRect = { left: 0, right: 0, top: 0, bottom: 0, width: 0, height: 0 }
+  let isInsideHero = false // NOVO — controla se a logo deve seguir o cursor ou voltar pra origem
 
   function measure() {
     const anchorRect = container.getBoundingClientRect()
@@ -53,6 +54,8 @@ export function renderHeroLogo() {
   measure()
 
   function handleMouseMove(e) {
+    if (!isInsideHero) return // NOVO — ignora o movimento se o cursor estiver fora do Hero
+
     const logoHalfW = logoInner.offsetWidth / 2
     const logoHalfH = logoInner.offsetHeight / 2
 
@@ -80,12 +83,35 @@ export function renderHeroLogo() {
     setRotationX(-normalizedY * LOGO_TILT.maxRotation)
   }
 
+  // NOVO — entra/sai da área do Hero
+  function handleMouseEnter() {
+    isInsideHero = true
+  }
+
+  function handleMouseLeave() {
+  isInsideHero = false
+  // gsap.to() direto (não os quickTo) — assim a volta pode ter sua
+  // própria duration/ease, independente da velocidade de seguimento
+  gsap.to(logoInner, {
+    x: 0,
+    y: 0,
+    rotationX: 0,
+    rotationY: 0,
+    duration: HERO_LOGO_RETURN.duration,
+    ease: HERO_LOGO_RETURN.ease,
+  })
+}
+
   window.addEventListener('resize', measure)
   document.addEventListener('mousemove', handleMouseMove)
+  heroSection.addEventListener('mouseenter', handleMouseEnter) // NOVO
+  heroSection.addEventListener('mouseleave', handleMouseLeave) // NOVO
 
   return function cleanup() {
     document.removeEventListener('mousemove', handleMouseMove)
     window.removeEventListener('resize', measure)
+    heroSection.removeEventListener('mouseenter', handleMouseEnter) // NOVO
+    heroSection.removeEventListener('mouseleave', handleMouseLeave) // NOVO
     gsap.set(logoInner, { rotationX: 0, rotationY: 0 })
   }
 }

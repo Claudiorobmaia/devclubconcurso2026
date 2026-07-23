@@ -189,7 +189,7 @@ if (testimonialsSection && testimonialsTrack) {
   testimonialsSection.addEventListener('wheel', (e) => {
     e.preventDefault()
 
-    xPercent -= e.deltaY * 0.01 // vai crescendo/diminuindo sem parar, sem trava
+    xPercent -= e.deltaY * 0.009 // vai crescendo/diminuindo sem parar, sem trava
 
     gsap.to(testimonialsTrack, {
       xPercent: xPercent,
@@ -214,7 +214,7 @@ export const MOUSE_GLOW = {
 }
 
 export const LOGO_TILT = {
-  maxRotation: 15,      // graus — o quanto o logo inclina no máximo (perceptível)
+  maxRotation: 10,      // graus — o quanto o logo inclina no máximo (perceptível)
   duration: 0.5,         // segundos — suavização do quickTo
   ease: 'power2',         // easing do tilt
   perspective: 800,        // px — "profundidade" da cena 3D (menor = efeito mais forte)
@@ -245,9 +245,14 @@ export const HERO_BUTTONS = {
 
 export const HERO_LOGO_FOLLOW = {
   range: 900,   // deslocamento máximo da logo em px
-  duration: 0.8,
-  ease: "power3.out",
+  duration: 5,  // suavização do movimento
+  ease: "power5.out",
 };
+
+export const HERO_LOGO_RETURN = {
+  duration: 8.0,        // ajuste aqui — quanto maior, mais lenta a volta
+  ease: 'elastic.out(1, 1.6)', // experimente também 'power3.out' se quiser sem "balanço"
+}
 
 export const HERO_TECH_STACK = {
   baseRadius: 100,      // raio do ícone mais próximo da logo (px)

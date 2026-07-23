@@ -17,7 +17,7 @@
         {
       "id": "rodrigo",
       "name": "Rodrigo Teixeira",
-      "role": "Professor de Algoritmos · 6 anos lecionando",
+      "role": "Professor de Inteligência Artificial · 10 anos de experiência",
       "image": "/notebook-professor-robo2.png",
       "photoId": 75,
       "gender": "male",
@@ -45,65 +45,65 @@
   ],
 
   "courses": [
-    {
-      "id": "fullstack",
-      "icon": "🧠",
-      "color": "emerald",
-      "title": "DevClub FullStack Pro",
-      "description": "Domine front-end e back-end com projetos reais do início ao fim.",
-      "hours": "60h"
-    },
-    {
-      "id": "ia",
-      "icon": "🤖",
-      "color": "orange",
-      "title": "IA Club",
-      "description": "Aprenda a criar e integrar soluções de inteligência artificial na prática.",
-      "hours": "40h"
-    },
-    {
-      "id": "mba",
-      "icon": "🎓",
-      "color": "blue",
-      "title": "DevClub MBA",
-      "description": "Aprofunde-se em gestão e liderança para carreiras tech de alto nível.",
-      "hours": "35h"
-    },
-    {
-      "id": "elite",
-      "icon": "🏆",
-      "color": "red",
-      "title": "DevClub Elite",
-      "description": "Para quem quer ir além: desafios avançados e mentoria individual.",
-      "hours": "50h"
-    },
-    {
-      "id": "frontend",
-      "icon": "🎨",
-      "color": "cyan",
-      "title": "Front End Club",
-      "description": "Crie interfaces modernas e responsivas com as melhores práticas do mercado.",
-      "hours": "30h"
-    },
-    {
-      "id": "data",
-      "icon": "📊",
-      "color": "green",
-      "title": "Data Club — Análise de Dados",
-      "description": "Aprenda a coletar, tratar e interpretar dados para tomar decisões melhores.",
-      "hours": "28h"
-    }
-  ],
-  "partners": [
-    { "name": "Nubank", "abbr": "N" },
-    { "name": "iFood", "abbr": "iF" },
-    { "name": "Stone", "abbr": "S" },
-    { "name": "Mercado Livre", "abbr": "ML" },
-    { "name": "Totvs", "abbr": "T" },
-    { "name": "Loft", "abbr": "L" },
-    { "name": "QuintoAndar", "abbr": "QA" },
-    { "name": "VTEX", "abbr": "V" }
-  ],
+  {
+    "id": "fullstack",
+    "icon": "https://api.iconify.design/skill-icons:react-dark.svg",
+    "color": "emerald",
+    "title": "DevClub FullStack Pro",
+    "description": "Domine front-end e back-end com projetos reais do início ao fim.",
+    "hours": "60h"
+  },
+  {
+    "id": "ia",
+    "icon": "https://api.iconify.design/simple-icons:n8n.svg?color=EA4B71",
+    "color": "orange",
+    "title": "IA Club",
+    "description": "Aprenda a criar e integrar soluções de inteligência artificial na prática.",
+    "hours": "40h"
+  },
+  {
+    "id": "mba",
+    "icon": "https://api.iconify.design/mdi:briefcase-account.svg?color=3B82F6",
+    "color": "blue",
+    "title": "DevClub MBA",
+    "description": "Aprofunde-se em gestão e liderança para carreiras tech de alto nível.",
+    "hours": "35h"
+  },
+  {
+    "id": "elite",
+    "icon": "https://api.iconify.design/mdi:rocket-launch.svg?color=EF4444",
+    "color": "red",
+    "title": "DevClub Elite",
+    "description": "Para quem quer ir além: desafios avançados e mentoria individual.",
+    "hours": "50h"
+  },
+  {
+    "id": "frontend",
+    "icon": "https://api.iconify.design/skill-icons:html.svg",
+    "color": "cyan",
+    "title": "Front End Club",
+    "description": "Crie interfaces modernas e responsivas com as melhores práticas do mercado.",
+    "hours": "30h"
+  },
+  {
+    "id": "data",
+    "icon": "https://api.iconify.design/skill-icons:postgresql-dark.svg",
+    "color": "green",
+    "title": "Data Club — Análise de Dados",
+    "description": "Aprenda a coletar, tratar e interpretar dados para tomar decisões melhores.",
+    "hours": "28h"
+  }
+],
+ "partners": [
+  { "name": "Nubank", "logo": "https://cdn.simpleicons.org/nubank" },
+  { "name": "Google", "logo": "https://cdn.simpleicons.org/google" },
+  { "name": "WhatsApp", "logo": "https://cdn.simpleicons.org/whatsapp" },
+  { "name": "Facebook", "logo": "https://cdn.simpleicons.org/facebook" },
+  { "name": "Netflix", "logo": "https://cdn.simpleicons.org/netflix" },
+  { "name": "Spotify", "logo": "https://cdn.simpleicons.org/spotify" },
+  { "name": "YouTube", "logo": "https://cdn.simpleicons.org/youtube" },
+  { "name": "GitHub", "logo": "https://cdn.simpleicons.org/github" }
+],
   "faqs": [
     {
       "question": "Qual a diferença entre os planos DevClub Cursos e DevClub Pro?",
@@ -134,28 +134,59 @@
       "answer": "Você pode falar com a gente a qualquer momento pelo e-mail contato@devclub.com.br, ou diretamente pelo chat de suporte dentro da plataforma."
     }
   ],
+ 
+ 
   "socials": [
     {
+      "name": "GitHub",
+      "url": "https://github.com",
+      "icon": "https://api.iconify.design/logos:github-icon.svg"
+    },
+    {
+      "name": "Discord",
+      "url": "https://discord.gg",
+      "icon": "https://api.iconify.design/logos:discord-icon.svg"
+    },
+    {
       "name": "Instagram",
-      "icon": "<svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"1\"/></svg>"
+      "url": "https://instagram.com",
+      "icon": "https://api.iconify.design/logos:instagram-icon.svg"
     },
     {
       "name": "YouTube",
-      "icon": "<svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M23 12s0-3.6-.5-5.3c-.3-1-1-1.7-2-2C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.5.5c-1 .3-1.7 1-2 2C1 8.4 1 12 1 12s0 3.6.5 5.3c.3 1 1 1.7 2 2 1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5c1-.3 1.7-1 2-2 .5-1.7.5-5.3.5-5.3zM9.8 15.5v-7l6 3.5-6 3.5z\"/></svg>"
+      "url": "https://youtube.com",
+      "icon": "https://api.iconify.design/logos:youtube-icon.svg"
     },
     {
       "name": "LinkedIn",
-      "icon": "<svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12H3v-12zM9 8.98h3.8v1.64h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.55 4.78 5.87v6.44h-4v-5.71c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.19 1.44-2.19 3v5.81H9v-12z\"/></svg>"
+      "url": "https://linkedin.com",
+      "icon": "https://api.iconify.design/logos:linkedin-icon.svg"
     },
     {
-      "name": "Blog",
-      "icon": "<svg class=\"w-5 h-5\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"M4 4h16v16H4z\"/><path d=\"M8 9h8M8 13h8M8 17h5\"/></svg>"
+      "name": "X",
+      "url": "https://x.com",
+      "icon": "https://api.iconify.design/logos:x.svg"
     }
   ],
+
+
+
   "coursesBadges": [
-    { "name": "Full Stack Pro", "color": "purple" },
-    { "name": "IA Club", "color": "emerald" },
-    { "name": "Front End Club", "color": "blue" },
-    { "name": "Data Club", "color": "orange" }
+    {
+      "name": "Full Stack Pro",
+      "icon": "https://api.iconify.design/skill-icons:react-dark.svg"
+    },
+    {
+      "name": "n8n Club",
+      "icon": "https://api.iconify.design/simple-icons:n8n.svg?color=EA4B71"
+    },
+    {
+      "name": "Front End Club",
+      "icon": "https://api.iconify.design/skill-icons:html.svg"
+    },
+    {
+      "name": "Data Club",
+      "icon": "https://api.iconify.design/skill-icons:postgresql-dark.svg"
+    }
   ]
 }
