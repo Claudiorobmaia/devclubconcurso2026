@@ -2,7 +2,7 @@ import './style.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
-
+gsap.registerPlugin(ScrollTrigger)
 import { renderHeroBackground } from './hero/heroBackground.js'
 import { renderMouseGlow } from './hero/mouseGlow.js'
 import { renderHeroLogo } from './hero/heroLogo.js'
