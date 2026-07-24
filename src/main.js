@@ -36,7 +36,6 @@ renderPartnersGlobe()
 initGlobeScrollReveal()
 renderDashboardReveal()
 
-
 initDockNavbar('#dock-nav', {
   maxScale: 5,
   minScale: 1,
@@ -310,3 +309,11 @@ function renderCoursesBadges() {
     container.appendChild(span)
   })
 }
+
+// Recalcula o ScrollTrigger depois que TUDO carregar (imagens inclusas)
+// Corrige o bug de produção onde as animações de scroll ficam
+// dessincronizadas por causa da latência de carregamento das imagens.
+window.addEventListener('load', () => {
+  ScrollTrigger.refresh()
+  setTimeout(() => ScrollTrigger.refresh(), 500)
+})
