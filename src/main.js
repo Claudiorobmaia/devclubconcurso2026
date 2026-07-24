@@ -10,6 +10,7 @@ import { renderHeroSubtitle } from './hero/heroSubtitle.js'
 import { renderHeroTitle } from './hero/heroTitle.js'
 import { renderHeroButtons } from './hero/heroButtons.js'
 import { renderHeroTechStack } from './hero/heroTechStack.js'
+import { initHeroScrollReveal, initGlobeScrollReveal } from './hero/heroScrollReveal.js'
 import { initSmoothScroll } from './utils/smoothScroll.js'
 import { initCircuitGrid } from './effects/circuitGrid.js'
 import { ParticleCard } from './effects/particleCard.js'
@@ -27,11 +28,14 @@ renderHeroBackground()
 renderMouseGlow()
 renderHeroLogo()
 renderHeroTechStack()
+initHeroScrollReveal()
 renderHeroSubtitle()
 renderHeroButtons()
 renderHeroTitle()
 renderPartnersGlobe()
+initGlobeScrollReveal()
 renderDashboardReveal()
+
 
 initDockNavbar('#dock-nav', {
   maxScale: 5,

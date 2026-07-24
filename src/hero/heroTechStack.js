@@ -21,8 +21,8 @@ export function renderHeroTechStack() {
   anchor.innerHTML = TECH_LOGOS.map((src, i) => `
     <img
       src="${src}"
-      class="tech-logo absolute top-1/2 left-1/2 w-10 h-10 opacity-0"
-      style="transform: translate(-50%, -50%); will-change: transform;"
+      class="tech-logo"
+      style="position: absolute; top: 50%; left: 50%; width: 40px; height: 40px; opacity: 0; transform: translate(-50%, -50%); will-change: transform;"
       data-index="${i}"
     />
   `).join('')
@@ -34,21 +34,15 @@ export function renderHeroTechStack() {
   const center = { x: 0, y: 0 }
 
   const tick = (time, deltaMs) => {
-    // Centro da espiral persegue a posição real da logo (mesma
-    // lógica de "seguir suavemente" que já usamos antes).
     const targetX = gsap.getProperty(logoEl, 'x')
     const targetY = gsap.getProperty(logoEl, 'y')
     center.x += (targetX - center.x) * HERO_TECH_STACK.followLag
     center.y += (targetY - center.y) * HERO_TECH_STACK.followLag
 
-    // Ângulo avança com o tempo -> a espiral gira continuamente.
     angle += HERO_TECH_STACK.rotationSpeed * (deltaMs / 1000)
 
     icons.forEach((icon, i) => {
-      // Cada ícone ocupa uma fatia igual do círculo (360° / 8 ícones)...
       const itemAngle = angle + angleStep * i
-      // ...mas com um raio CRESCENTE por índice — é isso que faz
-      // parecer espiral em vez de um círculo perfeito.
       const radius = HERO_TECH_STACK.baseRadius + i * HERO_TECH_STACK.radiusStep
 
       const x = center.x + Math.cos(itemAngle) * radius
