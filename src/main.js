@@ -316,4 +316,6 @@ function renderCoursesBadges() {
 window.addEventListener('load', () => {
   ScrollTrigger.refresh()
   setTimeout(() => ScrollTrigger.refresh(), 500)
+  setTimeout(() => ScrollTrigger.refresh(), 1500)
+  setTimeout(() => ScrollTrigger.refresh(), 3000)
 })
