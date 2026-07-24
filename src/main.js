@@ -1,6 +1,5 @@
 import './style.css'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { gsap, ScrollTrigger } from './gsapSetup.js'
 import Lenis from 'lenis'
 gsap.registerPlugin(ScrollTrigger)
 import { renderHeroBackground } from './hero/heroBackground.js'
