@@ -149,9 +149,10 @@ function renderCourses() {
 
 // Renderização das empresas parceiras
 function renderPartners() {
+  gsap.registerPlugin(ScrollTrigger)   // ← ADICIONA ESSA LINHA
+
   // Buscar o container
   const container = document.getElementById('partners-grid')
-
   if (!container) {
     console.warn('Container de parceiros não encontrado')
     return
