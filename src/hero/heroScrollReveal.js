@@ -1,7 +1,4 @@
-import gsap from 'gsap'
 import { gsap, ScrollTrigger } from '../gsapSetup.js'
-
-gsap.registerPlugin(ScrollTrigger)
 
 export function initHeroScrollReveal() {
   const logo = document.querySelector('#hero-logo')
@@ -29,7 +26,7 @@ export function initGlobeScrollReveal() {
   const trigger = document.querySelector('#globe-intro')
   if (!globe || !trigger) return
 
-  gsap.set(globe, { opacity: 0, scale: 0.15, y: -800, transformOrigin: 'center top' })
+  gsap.set(globe, { opacity: 0, scale: 0.15, y: -400, transformOrigin: 'center top' })
 
   gsap.timeline({
     scrollTrigger: {
