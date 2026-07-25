@@ -1,8 +1,7 @@
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { gsap, ScrollTrigger } from './gsapSetup.js'
 import { TextPlugin } from 'gsap/TextPlugin'
 
-gsap.registerPlugin(ScrollTrigger, TextPlugin)
+gsap.registerPlugin(TextPlugin)
 
 // Efeito de "digitando em tempo real" nos mockups de notebook
 
